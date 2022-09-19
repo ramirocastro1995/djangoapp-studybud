@@ -6,13 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Studybud</title>
     <!--<link rel="stylesheet" href="./style.css">-->
-  </head>
-  <body>
-        {% include 'navbar.html' %}
-        {% block content %}
-
-        {% endblock %}
     
+  </head>
 
-  </body>
+
+  <body>
+
+    {% include 'navbar.html' %}
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% block content %}
+
+
+    {% endblock %}
+
+</body>
+
 </html>
