@@ -1,1 +1,1 @@
-web :cd studybud && gunicorn sutdybud.wsgi --log-file -
+web :cd studybud && gunicorn stuybud.wsgi --log-file -
