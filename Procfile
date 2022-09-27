@@ -1,1 +1,1 @@
-web : gunicorn icard.wsgi --log-file -
+web :cd studybud && gunicorn sutdybud.wsgi --log-file -
