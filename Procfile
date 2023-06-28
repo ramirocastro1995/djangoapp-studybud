@@ -1,2 +1,3 @@
 release: python manage.py migrate
-web: cd studybud && gunicorn studybud.wsgi --log-file -
+web : gunicorn manage.py:app
+#web: cd studybud && gunicorn studybud.wsgi --log-file -
